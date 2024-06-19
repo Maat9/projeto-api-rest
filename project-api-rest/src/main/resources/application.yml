@@ -1,0 +1,17 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://monorail.proxy.rlwy.net:50044/railway
+    username: postgres
+    password: qPhGoOUzKCEwHOVtzJLRmoUIyBIdFMzE
+  jpa:
+    open-in-view: false
+    hibernate:
+      ddl-auto: create
+      dialect: org.hibernate.dialect.PostgreSQLDialect
+  h2:
+    console:
+      enabled: true
+      path: /h2-console
+      settings:
+        trace: false
+        web-allow-others: false
